@@ -160,7 +160,7 @@ function renderTask() {
           <i class="fas fa-edit"></i>
         </button>
         <button class="edit" id="saveBtn-${index}" onclick="saveEdit(${index})" style="display: none;">
-          💾
+         <i class="fas fa-save"></i>
         </button>
         <button class="delete" onclick="deleteTask(${index})">
           <i class="fas fa-trash-alt"></i>

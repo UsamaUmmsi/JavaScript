@@ -125,11 +125,15 @@ function renderTask(){
 
 // local storage main save karne k liye 
 
-let task = [];
+// let task = [];
 
-window.onload = function (){
+// window.onload = function (){
+//     if(localStorage.getItem("task")){
+//         tasks = JSON.parse(localStorage.getItem("task"))
+//        renderTask();
+//     }
 
-}
+// }
 
 // YEH FUNCTION TASK KO ADD KARNE KA HAI 
 
@@ -193,3 +197,39 @@ function deleteTask(index){
     localStorage.setItem("task", JSON.stringify(tasks))
     renderTask();
 }
+
+function renderTask(){
+    const list = document.getElementById("listTask")
+    list.innerHTML = "";
+
+   tasks.forEach((task,index)=> {
+    const li = document.getElementById("li");
+    li.innerHTML = `
+    <span id="taskTest-${index}">${task}</span>
+    <input type="text" id="editInput-${index}" value="${task}"
+    style="display:none; padding:6px;"/>
+
+    <div class="btn-group">
+
+    <button class= "edit"= id="editBtn-${index}"onClick="editTask(${index})">
+    <i class = "fas da-edit"></i></button>
+    <button class= "edit"= id="saveBtn-${index}"onClick="saveEdit(${index})" style= "display:none;">
+    <i class = "fas da-save"></i>
+    </button>
+    <button class= "delete"= id="saveBtn-${index}"onClick="deleteTask(${index})" style= "display:none;">
+    <i class="fas fa-trash-alt"></i>
+    </button>
+    </div>
+    `;
+
+    list.appendChild(li);
+    const inputField = li.querySelector(`#editInput-${index}`);
+    inputField.addEventListener("keydown", function (e){
+        if(e.key === "Enter"){
+            saveEdit(index);
+        }
+    });
+   });
+}
+
+
