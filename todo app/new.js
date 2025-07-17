@@ -61,7 +61,7 @@ document.getElementById(`editBtn-${index}`).style.display = "none"
 // Show save button
 document.getElementById(`saveBtn-${index}`).style.display = "inline-block"
 // Put cursor in input
-document.getElementById(`saveBtn-${index}`).focus()
+document.getElementById(`editInput-${index}`).focus()
 }
 
 
