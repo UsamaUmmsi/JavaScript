@@ -171,7 +171,7 @@ function deleteTask(index){
 // yeh jo error show karawata hai 
 
 function saveBtn(){
-    const newValue = document.getElementById(`editInpput-${index}`).value.trim()
+    const newValue = document.getElementById(`editInput-${index}`).value.trim()
     const error = document.getElementById("errorMessage")
     if(newValue === ""){
         error.innerText="Task Cannot be Empty"
@@ -231,5 +231,7 @@ function renderTask(){
     });
    });
 }
+
+
 
 

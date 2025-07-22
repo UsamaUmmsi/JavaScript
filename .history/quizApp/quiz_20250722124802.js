@@ -1,0 +1,5 @@
+const questions = [
+    {
+        question: "Which is a JavaScript Frame"
+    }
+]
