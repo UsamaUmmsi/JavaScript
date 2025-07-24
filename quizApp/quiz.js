@@ -167,18 +167,77 @@
 
 // ];
  
+// Sign Up Function 
+
+// function hundleSignup(){
+//   const email = document.getElementById("email").value.trim()
+//   const password = document.getElementById("password").value.trim()
+//   const errorBox = document.getElementById("signupError");
+//   if(!email || !passowrd){
+//     errorBox.textContent = "Please Enter Both Email and Password";
+//     return
+//   }
+//   if (!validateEmail(email)){
+//     errorBox.textContent = "Invalid email format"
+//     return;
+//   }
+
+// } 
+
+// Sign Up Function 
+// let currentQuestionIndex = 0; 
+// let selectedAnswers = new Array(questions.length).fill(null)
+// let timer ; 
+// let timeleft = 60;
+
+// function hundleSignup(){
+//   const email = document.getElementById("email").value.trim()
+//   const password = document.getElementById("passowrd").value.trim()
+//   const errorBox = document.getElementById("errorBox")
+//   if(!email || !password){
+//     errorBox.textContent = "Please Enter both email and password";
+//     return;
+//   }
+//   if(!validateEmail(email)){
+//     errorBox.textContent = "Invalid-Email ";
+//     return;
+//   }
+
+//   // All good -> start quiz 
+
+//   document.getElementById("signupBox").style.display = "none";
+//   document.getElementById("quizBox").style.display = "block";
+//   renderQuestion()
+// }
+
+// function renderQuestion(){
+//   clearInterval(timer);
+//   timeleft = 60;
+//   document.getElementById("quizBox").innerHTML="";
+//   const q = questions[currentQuestionIndex];
+//   const selected = selectedAnswers[currentQuestionIndex];
+// }
+
+let currentQuestionIndex = 0;
+let selectedAnswers = new Array(questions.length).fill(null);
+let timer ;
+let timeleft = 60;
 
 function hundleSignup(){
   const email = document.getElementById("email").value.trim()
-  const password = document.getElementById("password").value.trim()
+  const password = document.getElementById("passowrd").value.trim()
   const errorBox = document.getElementById("signupError");
-  if(!email || !passowrd){
-    errorBox.textContent = "Please Enter Both Email and Password";
+  if(!email || !password){
+    errorBox.textContent = "Please enter both email and passowrd"
     return
   }
   if (!validateEmail(email)){
-    errorBox.textContent = "Invalid email format"
+    errorBox.textContent = "InvalidEmail format"
     return;
-  }
+  };
 
+  document.getElementById("signupBox").style.display = "none"
+  document.getElementById("quizBox").style.display = "block"
+  renderQuestion();
 }
+

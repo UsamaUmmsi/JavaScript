@@ -19,12 +19,32 @@ const questions = [
     ],
     correct: 1,
   },
+   {
+    question: "CSS kis cheez ke liye use hota hai?",
+    options: [
+      "HTML structure banane ke liye",
+      "Website ko interactive banane ke liye",
+      "Website ka design aur layout banane ke liye",
+      "Database create karne ke liye",
+    ],
+    correct: 3,
+   },
+   {
+    question: "What is the correct syntax to set background color in CSS?",
+    options: [
+      "background = red;",
+      "color-background: red;",
+      "background-color: red;",
+      "bgcolor: red;",
+    ],
+    correct: 3,
+  },
 ];
 
 let currentQuestionIndex = 0;
 let selectedAnswers = new Array(questions.length).fill(null);
 let timer;
-let timeLeft = 10;
+let timeLeft = 60;
 
 // --- SIGNUP FUNCTIONALITY ---
 
@@ -58,7 +78,7 @@ function validateEmail(email) {
 
 function renderQuestion() {
   clearInterval(timer);
-  timeLeft = 10;
+  timeLeft = 60;
   document.getElementById("quizBox").innerHTML = "";
 
   const q = questions[currentQuestionIndex];
