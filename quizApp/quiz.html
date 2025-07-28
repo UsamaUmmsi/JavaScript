@@ -1,41 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz App</title>
-    <link rel="stylesheet" href="/quizApp/quiz.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-</head>
-<body>
-
-     <!-- Sign Up Section -->
-
-     <!-- <div id="signupBox" class="quiz-container">
-        <h2> Sign Up To Start Quiz </h2>
-        <input type="email" id="email" placeholder="Enter Your Email" required />
-        <br/>
-        <br/>
-        <input type="password" id="passowrd" placeholder="Enter Your Password" required/>
-        <button onclick="hundleSignup()" class="submitBtn">Sign Up</button>
-        <p id="signupError" style="color: red; margin-top: 10px;"></p>
-     </div> -->
-
-  <!-- Quiz Section -->
-
-  <!-- <div id="quizBox" class="quiz-container" style="display: none;">
-  </div> -->
-
-  <div id="signupBox" class="quiz-container">
-    <h2>Sign Up Start Quiz</h2>
-    <input type="email" id="email" placeholder="Enter Your Email" required />
-    <input type="password" id="passowrd" placeholder="Enter Your Passowrd" required/>
-    <button onclick="hundleSignup()" class="submitBtn">Sign Up</button>
-    <p id="signupError" style="color: red; margin-top: 10px;"></p>
-      <!-- Quiz Section -->
-    <div id="quizBox" class="quiz-container" style="display: none;">
+<!-- Sign Up Section -->
+    <div id="signupBox" class="quiz-container">
+      <h2>Sign Up to Start Quiz</h2>
+      <input type="email" id="email" placeholder="Enter your email" required /><br /><br />
+      <input type="password" id="password" placeholder="Enter your password" required /><br /><br />
+      <button onclick="handleSignup()" class="submitBtn">Sign Up</button>
+      <p id="signupError" style="color: red; margin-top: 10px;"></p>
     </div>
-  </div>
-</body>
-<script src="/quizApp/quiz.js"></script>
-</html>
+
+    <!-- Intro Video Section (Hidden Initially) -->
+    <div id="videoBox" class="quiz-container" style="display: none; text-align: center;">
+      <video id="introVideo" width="100%" autoplay muted playsinline>
+        <source src="/quizApp/intro.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- Quiz Section -->
+    <div id="quizBox" class="quiz-container" style="display: none;"></div>
+
+    <script src="/quizApp/app.js"></script
