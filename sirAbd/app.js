@@ -103,24 +103,24 @@
 
       // Age Logic
       if (age > 0 && age <= 8) {
-        messages.push("🧒 Pappo ki gari taiz hai");
+        messages.push("🧒 Abhi Bache ho ! Pogo dekho");
       } else if (age > 9 && age <= 15) {
-        messages.push("😎 Pappo kuriyon ka craze hai");
+        messages.push("😎 Nahi beta cycle chalao");
       } else if (age > 15 && age <= 25) {
-        messages.push("👀 Pappo ki ankhaain light blue, angrez lagta hai");
+        messages.push("👀 Chal beta tera to rishta pakka !");
       } else {
-        messages.push("💃 But Pappo can't dance saala");
+        messages.push("💃 Shadi karne ka koi faida nai ab");
       }
 
       // Percentage Logic
       if (percentage >= 85 && percentage <= 100) {
-        messages.push("🎉 Treat pakki! Jab khali kar beta.");
+        messages.push("🎉 A+ :  Treat pakki! Jab khali kar beta.");
       } else if (percentage < 50) {
         messages.push("🛺 Malick Rickshaw chalao!");
-      } else if (percentage >= 50 && percentage <= 70) {
-        messages.push("📘 C Grade aaya hai Maalik");
+      } else if (percentage >= 50 && percentage <= 60) {
+        messages.push("📘 C :  Grade aaya hai Maalik");
       } else if (percentage >= 70 && percentage <= 84) {
-        messages.push("📗 B Grade agaya Jaani");
+        messages.push("📗 B : Grade agaya Jaani");
       } else {
         messages.push("❓ Invalid Percentage!");
       }
@@ -131,16 +131,18 @@
       } else if (day === "fri") {
         messages.push("🕌 Maalik aakhri din hai kaam ka");
       } else if (day) {
-        messages.push("💼 Zindagi jhand hai yaar!");
+        messages.push("💼 bht kaam hai yawr nahi asakta !");
       }
 
       // Grade Logic
       if (grade === "A") {
-        messages.push("👏 Basha maza agaya!");
+        messages.push("👏 A+ : Basha maza agaya! Chal Beta Treat to Banti hai");
       } else if (grade === "B") {
-        messages.push("✅ Pappo pass hogaya!");
-      } else if (grade) {
-        messages.push("🛒 Chal bhai dukan pe chalte hain!");
+        messages.push("✅ B+ : Pappo pass hogaya!");
+      } else if (grade === "C") {
+        messages.push("🛒 C : Abbu Nahi Mane Ge!");
+      }else{
+         messages.push("🛒Faild :  Chal bhai dukan pe chalte hain!");
       }
 
       resultBox.innerHTML = messages.map(msg => `<p>${msg}</p>`).join('');
