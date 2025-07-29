@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Control</title>
+</head>
+<body>
+     <div class="quiz-box">
+    <h2>👤 Enter Your Info</h2>
+    <input type="number" id="age" placeholder="Enter your age" />
+    <input type="number" id="percentage" placeholder="Enter your percentage" />
+    <select id="day">
+      <option value="">Select Day</option>
+      <option value="mon">Monday</option>
+      <option value="tue">Tuesday</option>
+      <option value="wed">Wednesday</option>
+      <option value="thu">Thursday</option>
+      <option value="fri">Friday</option>
+      <option value="sat">Saturday</option>
+      <option value="sun">Sunday</option>
+    </select>
+    <select id="grade">
+      <option value="">Select Grade</option>
+      <option value="A">A</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+      <option value="D">D</option>
+    </select>
+    <button onclick="runQuiz()">Submit</button>
+
+    <div class="result" id="resultBox" style="display:none;"></div>
+  </div>
+
+    
+    <script src="/sirAbd/app.js"></script>
+</body>
+</html>
