@@ -138,11 +138,11 @@
       if (grade === "A") {
         messages.push("👏 A+ : Basha maza agaya! Chal Beta Treat to Banti hai");
       } else if (grade === "B") {
-        messages.push("✅ B+ : Pappo pass hogaya!");
+        messages.push("✅ B: Ghade Or mehnat ki zarrorat hai !");
       } else if (grade === "C") {
-        messages.push("🛒 C : Abbu Nahi Mane Ge!");
+        messages.push("🛒 C : To to gaya beta ghar se bahir");
       }else{
-         messages.push("🛒Faild :  Chal bhai dukan pe chalte hain!");
+         messages.push("🛒D : D laya hai Nalayak");
       }
 
       resultBox.innerHTML = messages.map(msg => `<p>${msg}</p>`).join('');
