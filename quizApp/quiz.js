@@ -37,28 +37,27 @@ function renderQuestion(){
 
     const q = questions
     [currentQuestionIndex];
-    const selected = selectedAnswers[currentQuestionIndex];
-    
-  const questionHTML = `
-  <h3>${q.question}</h3>
-  <form id="quizForm">
-  ${q.options
-    .map(
-        (option, i) => `
+    const selected = selectedAnswers
+    [currentQuestionIndex];
+
+    const question = `
+    <h3>${q.question}</h3>
+    <form id="quizForm">
+    ${q.options
+        .map((option , i )=> `
         <div class="option">
-        <input type ="radio"
+        <input type="radio"
         name="answer" id="opt${i}"
         value="${i}" ${
-            selected == i ? "checked" : ""
-        }>
-        <label for = "opt${i}">${option}>/label>
+            selected == i ? "checked" : "" }>
+            <label for="opy${i}">${option}<label>
         </div>
-    `)
-    .join("")}
-  
-  </form>
-  
-  `
+        `).join("") }
+    
+    
+    </form>
+    `
+
 }
 
 
