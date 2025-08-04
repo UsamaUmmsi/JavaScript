@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+.container{
+    background-color: #212121;
+    height: 100vh;
+    color: salmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+ background-color: salmon;
+ color: #212121;
+ padding: 10px 20px;
+ border-radius: 10px;
+ cursor: pointer;
+ border: transparent;
+ margin: 20px;
+}
+
+button:hover{
+    background-color: rgb(245, 89, 72);
+    color: white;
+    
+}
+
+.para{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    text-align:center;
+    margin: 20px;
+}
