@@ -27,7 +27,7 @@ const questions = [
       "Website ka design aur layout banane ke liye",
       "Database create karne ke liye",
     ],
-    correct: 3,
+    correct: 1,
    },
    {
     question: "What is the correct syntax to set background color in CSS?",
@@ -37,7 +37,7 @@ const questions = [
       "background-color: red;",
       "bgcolor: red;",
     ],
-    correct: 3,
+    correct: 2,
   },
 ];
 
